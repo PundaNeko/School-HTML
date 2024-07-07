@@ -1,0 +1,153 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: 2500px 1268px;
+  background-repeat: no-repeat;
+  background-image: url('../images/image.jpg');
+  background-color: #FFFFFF;
+  background-blend-mode: multiply;
+  transition: background-color 0.3s;
+
+}
+
+body:active {
+  background-color: rgba(141, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  transition: background-color 4s;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.vertical p {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.vertical a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.horizontal_B {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 110px;
+}
+
+.sample-text {
+  font-size: 52px;
+  font-weight: bold;
+  color: rgb(207, 135, 0);
+  cursor: pointer;
+}
+
+.sample-text:hover {
+  color: red;
+}
+
+.sample-text:active:before {
+  font-size: 36px;
+
+}
+
+.sample-text:active:after {
+  font-size: 28px;
+}
+
+.large_box {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.top_menu {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: turquoise;
+  position: fixed;
+  background-size: 1000px;
+  width: 130%;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  font-size: 22px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.top_menu img {
+  height: 80px;
+  margin-left: 75px;
+  display: flex;
+}
+
+.top_menu p {
+  margin-left: 75px;
+  display: inline-flex;
+}
+
+.top_menu a {
+  display: inline-block;
+  text-align: right;
+  justify-content: right;
+  align-items: right;
+  margin-left: 30px;
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 26px;
+  background-color: white;
+  padding: 3px 20px;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: blue;
+  align-items: center;
+  margin-top: 740px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  columns: xp offset 0;
+}
+
+.footer a {
+  margin-left: 30px;
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 26px;
+  background-color: white;
+  padding: 3px 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
