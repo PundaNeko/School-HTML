@@ -1,0 +1,41 @@
+Website concept:
+
+Panda page: 
+Bamboo forest BG + panda picture
+random introduction to the panda (AI Generated seems fine),
+more uncanny the better.
+rifle inside the self introduction.
+on click Speech bubble on panda, on panda click panda moves while being pissed off
+second click: panda goes to another place and reduces their opacity
+third click panda dies and the real page shows. (don't forget to roast the viewer for killing an innocent panda)
+story formatting will be all over the place.
+the you can find me here part will be clickable in "you" "find" and "here".
+"you" will display monster in the introduction for a moment before returning to normal if panda has been clicked at least once.
+"find" will show "Please don't" in introduction box for a moment.
+"here" will show "nope" in the intro box.
+clicking the panda without the rifle will display a heart emoji.
+hovering the panda the second go will open a modal that say's "please don't do this"
+introduction background will be a glass case with the rifle behind it.
+clicking the introduction will turn the cursor into a crosshair and the gun will disappear. (there is no putting the rifle back)
+
+Intermission page: 
+big words in middle: 
+"I see you've embraced your inner monster..."
+"Very well, as much as I hate it, I must greet my kind personally"
+--> Gunshot towards viewer
+"You, me, us, them, we may all be different outside"
+"But in the end, we're all the same inside aren't we."
+"My name is--"
+--> Real Page
+
+Real page:
+Self Introduction starts with a few fake parts (notably name, skills and history)
+Picture starts blurred out but gets clearer with time.
+Background changes from full black to prison (or cage).
+You can click on fake parts to get the right info.
+"You can find me here" turns into "Let me out!!"
+First click: "No!"
+Second click: "Points gun"
+Third click: "Shoots"
+Page closes(?) or just turns black.
+
