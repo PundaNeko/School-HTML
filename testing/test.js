@@ -1,20 +1,22 @@
 function flip(element) {
+    const currentText = element;
     currentText.classList.add('hidden');
     setTimeout(() => {
-        if (element.innerHTML == "Hello World!!") {
-            element.innerHTML = 'Goodbye World TwT';
+        if(currentText.textContent == 'Hello World!!')
+        {
+            currentText.textContent = 'Text has been changed!';
         }
         else{
-            element.innerHTML= "Hello World!!";
+            currentText.textContent = 'Hello World!!';
         }
         currentText.classList.remove('hidden');
-    }, 500); // Match the duration in the CSS transition property
-}
-function changeText(element) {
-    // Get the current text element
-    const currentText = element;
-    // Set the text to fade out
-    // Wait for the fade-out transition to finish
+        void currentText.offsetWidth;
+        currentText.classList.add('shake');
+        setTimeout(()=>{
+            currentText.classList.remove('shake');
+            console.log("I'm doing my part");
+        }, 500);
+    }, 500);
 }
 function disappear() {
     alert("Guess I'm dead");

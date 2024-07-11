@@ -1,6 +1,20 @@
 .clickable-text{
+    padding: 200px;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
     transition: opacity 0.5s ease-in-out;
 }
 .hidden{
-    display: none;
+    opacity: 0;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(50px); }
+    50% { transform: translateX(-50px); }
+    75% { transform: translateX(50px); }
+    100% { transform: translateX(0); }
+}
+.shake {
+    animation: shake 0.5s;
 }
