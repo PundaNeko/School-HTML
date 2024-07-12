@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  /* background-image: url(../Images/Bamboo-Forest.jpg); */
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 1000px;
+}
+.red-text {
+  color: red;
+  text-decoration: line-through;
+}
+
+.blue-text {
+  color: blue;
+  font-weight: bold;
+}
+
+.redacted {
+  text-decoration: line-through;
+}
+
+.introduction-box {
+  width: 40vw;
+}
+
+.introduction-box p {
+  margin-top: 20px;
+}
+
+.panda-intro-english p {
+  margin-top: 5px;
+}
+.hidden{
+  display: none;
+}
+.playwrite-hu {
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* .panda-intro-japanese {
+  display: none;
+}
+
+.panda-intro-binary {
+  display: none;
+}
+
+.panda-intro-hexadecimal {
+  display: none;
+}*/
+
+.panda-intro-english {
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
