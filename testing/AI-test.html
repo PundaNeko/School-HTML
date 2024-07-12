@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shake Effect Example</title> 
+    <style>
+        .clickable-text {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+            transition: opacity 0.5s ease-in-out;
+            display: inline-block; 
+            /* Ensure the element is block-level for the shake animation */ 
+        }
+        .hidden {
+            opacity: 0;
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-1px); }
+            50% { transform: translateX(1px); }
+            75% { transform: translateX(-1px); }
+            100% { transform: translateX(0); }
+        }
+        .shake {
+            animation: shake 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <span id="text" class="clickable-text" onclick="changeText(this)">Click Me!</span>
+
+    <script>
+        function changeText(element) {
+            // Log the current text
+            console.log("Current text:", element.textContent);
+
+            // Get the current text element
+            const currentText = element;
+            // Set the text to fade out
+            currentText.classList.add('hidden');
+
+            // Wait for the fade-out transition to finish
+            setTimeout(() => {
+                // Change the text
+                currentText.textContent = 'Text has been changed!';
+                // Log the new text
+                console.log("New text:", currentText.textContent);
+
+                // Set the text to fade in
+                currentText.classList.remove('hidden');
+
+                // Force reflow to restart the animation
+                void currentText.offsetWidth;
+
+                // Add the shake class
+                currentText.classList.add('shake');
+
+                // Remove the shake class after the animation ends
+                setTimeout(() => {
+                    currentText.classList.remove('shake');
+                }, 500); // Match the duration of the shake animation
+            }, 500); // Match the duration in the CSS transition property
+        }
+    </script>
+</body>
+</html>
