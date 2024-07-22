@@ -1,8 +1,14 @@
 let haveRifle = false;
 
-function scriptLoaded() {
-    console.log('Script loaded successfully.');
-}
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM fully loaded and parsed.');
+    var clickbaitText = document.querySelector('.clickbait-text');
+    if (clickbaitText) {
+        clickbaitText.classList.add('blinking');
+    } else {
+        console.error('Element with class .clickbait-text not found.');
+    }
+});
 document.querySelector('.select-box').addEventListener('change', function () {
     var selectedValue = this.value;
     var $english = document.querySelector('.panda-intro-english');
@@ -33,4 +39,8 @@ document.querySelector('.clickable-rifle').addEventListener('click', function() 
     document.body.classList.add('crosshair');
     haveRifle = true;
     console.log(haveRifle);
+});
+document.querySelector('.clickbait-text').addEventListener('click', function() {
+    var $rifle = document.querySelector('.clickbait-text');
+    $rifle.classList.remove('blinking');
 });
