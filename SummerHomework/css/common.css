@@ -8,10 +8,9 @@
   box-sizing: border-box;
 }
 main {
-  /* background-image: url(../Images/Bamboo-Forest.jpg); */
+  background-image: url(../Images/bamboo-fores.jpg);
   background-repeat: no-repeat;
   height: 100vh;
-  width: 1000px;
 }
 .red-text {
   color: red;
@@ -47,18 +46,26 @@ main {
   font-weight: 400;
   font-style: normal;
 }
-/* .panda-intro-japanese {
-  display: none;
+.main-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  justify-content: space-between;
+  border: 1px solid black;
 }
-
-.panda-intro-binary {
-  display: none;
+.picture-box{
+  position: relative;
+  /* background-color: purple; */
 }
-
-.panda-intro-hexadecimal {
-  display: none;
-}*/
-
+.introduction-box{
+  background-image: url(../Images/bamboo.jpg);
+  position: relative;
+  /* background-color: pink; */
+  width:auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .panda-intro-english {
   font-family: "Playwrite HU", cursive;
   font-optical-sizing: auto;
@@ -66,3 +73,34 @@ main {
   font-style: normal;
   font-size: 12px;
 }
+.introduction-background{
+  position: relative;
+  left: 5vw;
+  top: 50px;
+  width: 40vw; 
+  justify-content: center;
+  background-color: #C19A6B;
+}
+.clickable-rifle{
+  position: relative;
+  top: -55px;
+  width: 30vw;
+  opacity: 0.4;
+}
+.panda-image{
+  position: relative;
+  top: 500px;
+  right: -270px;
+}
+.crosshair{
+  cursor: crosshair;
+}
+
+.phase2{
+  opacity: 80px;
+}
+.phase3{
+  opacity: 0.4;
+}
+
+

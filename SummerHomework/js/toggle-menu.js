@@ -1,3 +1,5 @@
+let haveRifle = false;
+
 function scriptLoaded() {
     console.log('Script loaded successfully.');
 }
@@ -24,4 +26,11 @@ document.querySelector('.select-box').addEventListener('change', function () {
     } else if (selectedValue === 'japanese') {
         $japanese.classList.remove('hidden');
     }
+});
+document.querySelector('.clickable-rifle').addEventListener('click', function() {
+    var $rifle = document.querySelector('.clickable-rifle');
+    $rifle.classList.add('hidden');
+    document.body.classList.add('crosshair');
+    haveRifle = true;
+    console.log(haveRifle);
 });
