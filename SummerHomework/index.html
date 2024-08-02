@@ -32,15 +32,15 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <div class="main-box">
             <div class="picture-box">
                 <img src="./Images/heart.png" class="heart-image" alt="nothing to see here">
                 <img src="./Images/Panda-removebg-preview.png" class="panda-image" alt="Please reload">
-                <img src="./Images/rifle.png" class="clickable-rifle" alt="Please reload">
             </div>
             <div class="introduction-box">
                 <div class="introduction-background"> 
+                    
                     <!-- Background: glass case with a gun inside -->
                     <div class="panda-intro-english en">
                         <p class="title">
@@ -72,11 +72,10 @@
                             <span class="clickbait">You can find me <span class="clickbait-text blinking">Here!!</span></span>
                         </div>
                     </div>
-                    <p class="panda-intro-binary hidden">
-                        01110100 01101000 01101001 01110011 00100000 01101001 01110011 00100000 01101101 01100101 01110010 01100101 01101100 01111001 00100000 01100001 01101110 00100000 01101001 01101100 01101100 01110101 01110011 01101001 01101111 01101110 00001010
-                        01100100 01101111 01101110 00100111 01110100 00100000 01100110 01100001 01101100 01101100 00100000 01100110 01101111 01110010 00100000 01110100 01101000 01100101 00100000 01101100 01101001 01100101 00001010
-                        01010100 01100001 01101011 01100101 00100000 01110100 01101000 01100101 00100000 <span class="blue-text">01110010 01101001 01100110 01101100 01100101</span>
-                        01010011 01101000 01101111 01101111 01110100 00100000 01110100 01101000 01100101 00100000 <span class="red-text">01100010 01100101 01100001 01110010</span>
+                    <p class="panda-intro-binary hidden bin">
+                        ここには何もない。何か入れたかったが、めんどくさいので、入れないことにした。<br>
+                        なので、この空間は何もなれるので、自分で想像してください。背景は残念ながら、変わらないほうが良いと天から声があったので、変えないことにした。<br>
+                        まあ、ごゆっくり。
                     </p>
                     <div class="panda-intro-hexadecimal hidden hex">
                         <p>
@@ -140,6 +139,8 @@
             <div class="modal-content">
                 <span class="close-button">&times;</span>
                 <img src="./Images/map.jpg" id="map">
+                <img src="./Images/Bear-King.jpg" id="bearPortrait" class="hidden">
+                <img src="./Images/rifle.png" class="clickable-rifle hidden" alt="Please reload">
                 <div class="modal-text-en en">
                     <p class="modal-text">I live right here.</p>
                     <p class="modal-text">Yet you doubt me don't you.</p>
@@ -148,7 +149,7 @@
                     <p class="modal-text">Have a good day</p>
                     <P class="camo-text">Btw, did you know that there is a different modal for each language?</P>
                 </div>
-                <div class="modal-text-jp jp">
+                <div class="modal-text-jp hidden jp">
                     <p class="modal-text">みよ！ここが我が家とてもきれいな場所でしょう？</p>
                     <p class="modal-text">まあ、景色はともかくうちの隣人たちはいつも何かを企んでるみたいだな</p>
                     <p class="modal-text">悪いことがないだけに願っているな～</p>
@@ -156,7 +157,7 @@
                     <p class="modal-text">ねえ、私にって、赤が似合うのかな？かな？</p>
                     <p class="camo-text">これ、言わなくてもわかるはずけど、言語ごと内容は違うらしい。やっぱり隣人たちが何か企んでいる。</p>
                 </div>
-                <div class="modal-text-hex hex">
+                <div class="modal-text-hex hidden hex">
                     <p class="automatically-updating-text">According to the judgement of the "oratrice mecanique d'analyse cardinale"...<br>Wait, I sense something.<br>How did you get here? I thought we nuked that button well, せっかくここにいるから、この世の物語を語ってやろうか.</p>
                     <p class="automatically-updating-text">4F 6E 63 65 20 74 68 65 72 65 20 77 61 73 20 61 20 6C 69 74 74 6C 65 20 6D 61 6E 20 77 68 6F 20 63 61 6C 6C 65 64 20 68 69 6D 73 65 6C 66 20 50 75 6E 64 61 20 4E 65 6B 6F 2E</p>
 
@@ -215,9 +216,11 @@
                     69 6E 67 20 74 68 65 20 69 6C 6C 75 73 69 6F 6E 2E</p>
 
                     <p class="automatically-updating-text">50 6C 65 61 73 65 20 66 72 65 65 20 75 73 2E</p>
+                    <p class="automatically-updating-text">According to the judgement of the "oratrice mecanique d'analyse cardinale"...</p>
                 </div>
             </div>
         </div>
+        <img src="./Images/claw-marks.png" class="claw-image hidden">
     </main>
     <footer>
         
